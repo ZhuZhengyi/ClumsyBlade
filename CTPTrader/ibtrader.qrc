@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/IBTrader">
+        <file>images/sniper.png</file>
+    </qresource>
+</RCC>

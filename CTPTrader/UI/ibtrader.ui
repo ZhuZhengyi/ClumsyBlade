@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PVTraderClass</class>
+ <widget class="QMainWindow" name="PVTraderClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>PV Sniper</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/sniper.png</normaloff>images/sniper.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget_main">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView{background-color: rgb(0, 0, 0);
+color: rgb(170, 170, 127);}</string>
+        </property>
+        <property name="tabPosition">
+         <enum>QTabWidget::West</enum>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>tab_tickchart</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="TickChart" name="tickChart" native="true"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>tab_list</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="0">
+             <widget class="QTabWidget" name="tabWidget_list_main">
+              <property name="tabPosition">
+               <enum>QTabWidget::South</enum>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_6">
+               <attribute name="title">
+                <string>SHFE</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_15">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_14">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="NormalStockList" name="shfeList"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_8">
+               <attribute name="title">
+                <string>CZCE</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_17">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing">
+                 <number>6</number>
+                </property>
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_16">
+                  <item row="0" column="0">
+                   <widget class="NormalStockList" name="czceList"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_9">
+               <attribute name="title">
+                <string>DCE</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_19">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <property name="horizontalSpacing">
+                 <number>6</number>
+                </property>
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_18">
+                  <item row="0" column="0">
+                   <widget class="NormalStockList" name="dceList"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_7">
+               <attribute name="title">
+                <string>CFFEX</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_21">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_20">
+                  <item row="0" column="0">
+                   <widget class="NormalStockList" name="cffexList"/>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_11">
+         <attribute name="title">
+          <string>tab_custom</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_23">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_22">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="CustomedStockList" name="customList"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConnection">
+    <property name="title">
+     <string>System</string>
+    </property>
+    <addaction name="actionConnect"/>
+    <addaction name="actionDisconnect"/>
+    <addaction name="separator"/>
+    <addaction name="actionUserPasswordUpdate"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuQuery">
+    <property name="title">
+     <string>Query</string>
+    </property>
+    <widget class="QMenu" name="menuQryBroker">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>BrokerQry</string>
+     </property>
+     <addaction name="actionTradingParams"/>
+     <addaction name="actionTradingAlgos"/>
+    </widget>
+    <widget class="QMenu" name="menuTradingQry">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>TradingQry</string>
+     </property>
+     <addaction name="actionQryOrder"/>
+     <addaction name="actionQueryMaxOrderVolume"/>
+     <addaction name="separator"/>
+     <addaction name="actionQryParkedOrder"/>
+     <addaction name="actionQryParkedOrderAction"/>
+     <addaction name="separator"/>
+     <addaction name="actionQryTrade"/>
+     <addaction name="actionQryTradingNotice"/>
+    </widget>
+    <widget class="QMenu" name="menuBaseInfoQry">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>ExchangeInfoQry</string>
+     </property>
+     <addaction name="actionQryExchange"/>
+     <addaction name="actionQryInstrument"/>
+     <addaction name="actionQryInstrumentCommissionRate"/>
+     <addaction name="actionQryInstrumentMarginRate"/>
+    </widget>
+    <widget class="QMenu" name="menuInvestorQry">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>InvestorQry</string>
+     </property>
+     <addaction name="actionQryInvestor_2"/>
+     <addaction name="actionQryTradingCode"/>
+     <addaction name="actionQryTradingAccount"/>
+     <addaction name="actionQryCFMMCTradingAccountKey"/>
+     <addaction name="separator"/>
+     <addaction name="actionQryInvestorPosition"/>
+     <addaction name="actionQryInvestorPositionDetail"/>
+     <addaction name="actionQryInvestorPositionCombineDetail"/>
+     <addaction name="separator"/>
+     <addaction name="actionQryEWarrantOffset"/>
+    </widget>
+    <widget class="QMenu" name="menuSettlementQry">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>SettlementQry</string>
+     </property>
+     <addaction name="actionQrySettlementInfo"/>
+     <addaction name="actionQrySettlementInfoConfirm"/>
+    </widget>
+    <addaction name="menuBaseInfoQry"/>
+    <addaction name="menuQryBroker"/>
+    <addaction name="menuInvestorQry"/>
+    <addaction name="actionQryNotice"/>
+    <addaction name="separator"/>
+    <addaction name="actionQryDepthMarketData"/>
+    <addaction name="menuTradingQry"/>
+    <addaction name="menuSettlementQry"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuOrder">
+    <property name="title">
+     <string>Trade</string>
+    </property>
+    <addaction name="actionOrderInsert"/>
+    <addaction name="actionOrderAction"/>
+    <addaction name="separator"/>
+    <addaction name="actionParkedOrderInsert_2"/>
+    <addaction name="actionParkedOrderAction"/>
+    <addaction name="separator"/>
+    <addaction name="actionRemoveParkedOrder"/>
+    <addaction name="actionRemoveParkedOrderAction"/>
+   </widget>
+   <widget class="QMenu" name="menuCapitalMgr">
+    <property name="title">
+     <string>CapitalManagement</string>
+    </property>
+    <widget class="QMenu" name="menuTransfer_Accounts">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Transfer Accounts</string>
+     </property>
+     <addaction name="actionBankToFuture"/>
+     <addaction name="actionFutureToBank"/>
+    </widget>
+    <widget class="QMenu" name="menuInfoQry">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>BankInfoQry</string>
+     </property>
+     <addaction name="actionQueryBankAccount"/>
+     <addaction name="separator"/>
+     <addaction name="actionQryAccountregister"/>
+     <addaction name="actionQryContractBank"/>
+     <addaction name="separator"/>
+     <addaction name="actionQryTransferSerial"/>
+     <addaction name="actionQryTransferBank"/>
+    </widget>
+    <addaction name="menuTransfer_Accounts"/>
+    <addaction name="menuInfoQry"/>
+    <addaction name="separator"/>
+    <addaction name="actionTradingAccountPasswordUpdate"/>
+   </widget>
+   <widget class="QMenu" name="menuWindows">
+    <property name="title">
+     <string>Windows</string>
+    </property>
+    <addaction name="actionLeft"/>
+    <addaction name="actionRight"/>
+    <addaction name="actionBottom"/>
+   </widget>
+   <widget class="QMenu" name="menuScript_demo">
+    <property name="title">
+     <string>Strategy</string>
+    </property>
+    <addaction name="actionDemo"/>
+   </widget>
+   <addaction name="menuConnection"/>
+   <addaction name="menuQuery"/>
+   <addaction name="menuOrder"/>
+   <addaction name="menuCapitalMgr"/>
+   <addaction name="menuWindows"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuScript_demo"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget_bottom">
+   <property name="minimumSize">
+    <size>
+     <width>150</width>
+     <height>172</height>
+    </size>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <property name="minimumSize">
+     <size>
+      <width>150</width>
+      <height>150</height>
+     </size>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Console log</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QGridLayout" name="gridLayout_9">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetMinimumSize</enum>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QPushButton" name="clear_log">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Clear</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTextBrowser" name="log_output">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 0);</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_right">
+   <property name="minimumSize">
+    <size>
+     <width>250</width>
+     <height>306</height>
+    </size>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <property name="minimumSize">
+     <size>
+      <width>250</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_6">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="2" column="0">
+        <widget class="QLabel" name="AskPrice5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>AskPrice5</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="AskPrice4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>AskPrice4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="AskPrice5_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="AskPrice4_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLabel" name="BidPrice4_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLabel" name="BidPrice5_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="BidPrice4">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>BidPrice4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="BidPrice5">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>BidPrice5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="AskPrice1">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>AskPrice1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="AskPrice1_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>BidPrice1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="BidPrice1_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="AskPrice3">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>AskPrice3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="AskPrice2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>AskPrice2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="BidPrice2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>BidPrice2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="BidPrice3">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>BidPrice3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="BidPrice3_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLabel" name="BidPrice2_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="AskPrice2_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="AskPrice3_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);
+font: 75 14pt &quot;新宋体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>LastPrice</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="LastPrice_val">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 0);
+font: 75 14pt &quot;新宋体&quot;;</string>
+         </property>
+         <property name="text">
+          <string>InstrumentID</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="InstrumentID_val">
+         <property name="styleSheet">
+          <string notr="true">font: 75 14pt &quot;新宋体&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_left">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>147</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTabWidget" name="tabWidget_left">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Tab 1</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Tab 2</string>
+          </attribute>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionConnect">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionQryInvestorPosition">
+   <property name="text">
+    <string>QryInvestorPosition</string>
+   </property>
+  </action>
+  <action name="actionOrderInsert">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>OrderInsert</string>
+   </property>
+  </action>
+  <action name="actionParkedOrderInsert_2">
+   <property name="text">
+    <string>ParkedOrderInsert</string>
+   </property>
+  </action>
+  <action name="actionParkedOrderAction">
+   <property name="text">
+    <string>ParkedOrderAction</string>
+   </property>
+  </action>
+  <action name="actionOrderAction">
+   <property name="text">
+    <string>OrderAction</string>
+   </property>
+  </action>
+  <action name="actionRemoveParkedOrder">
+   <property name="text">
+    <string>RemoveParkedOrder</string>
+   </property>
+  </action>
+  <action name="actionRemoveParkedOrderAction">
+   <property name="text">
+    <string>RemoveParkedOrderAction</string>
+   </property>
+  </action>
+  <action name="actionTradingParams">
+   <property name="text">
+    <string>TradingParams</string>
+   </property>
+  </action>
+  <action name="actionTradingAlgos">
+   <property name="text">
+    <string>TradingAlgos</string>
+   </property>
+  </action>
+  <action name="actionBankToFuture">
+   <property name="text">
+    <string>BankToFuture</string>
+   </property>
+  </action>
+  <action name="actionQueryBankAccount">
+   <property name="text">
+    <string>QueryBankAccount</string>
+   </property>
+  </action>
+  <action name="actionQryTradingNotice">
+   <property name="text">
+    <string>QryTradingNotice</string>
+   </property>
+  </action>
+  <action name="actionQryParkedOrderAction">
+   <property name="text">
+    <string>QryParkedOrderAction</string>
+   </property>
+  </action>
+  <action name="actionQryParkedOrder">
+   <property name="text">
+    <string>QryParkedOrder</string>
+   </property>
+  </action>
+  <action name="actionQryContractBank">
+   <property name="text">
+    <string>QryContractBank</string>
+   </property>
+  </action>
+  <action name="actionQryAccountregister">
+   <property name="text">
+    <string>QryAccountregister</string>
+   </property>
+  </action>
+  <action name="actionQryTransferSerial">
+   <property name="text">
+    <string>QryTransferSerial</string>
+   </property>
+  </action>
+  <action name="actionQryEWarrantOffset">
+   <property name="text">
+    <string>QryEWarrantOffset</string>
+   </property>
+  </action>
+  <action name="actionQryCFMMCTradingAccountKey">
+   <property name="text">
+    <string>QryCFMMCTradingAccountKey</string>
+   </property>
+  </action>
+  <action name="actionQryInvestorPositionCombineDetail">
+   <property name="text">
+    <string>QryInvestorPositionCombineDetail</string>
+   </property>
+  </action>
+  <action name="actionQrySettlementInfoConfirm">
+   <property name="text">
+    <string>QrySettlementInfoConfirm</string>
+   </property>
+  </action>
+  <action name="actionQryNotice">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>QryNotice</string>
+   </property>
+  </action>
+  <action name="actionQryInvestorPositionDetail">
+   <property name="text">
+    <string>QryInvestorPositionDetail</string>
+   </property>
+  </action>
+  <action name="actionQryTransferBank">
+   <property name="text">
+    <string>QryTransferBank</string>
+   </property>
+  </action>
+  <action name="actionQrySettlementInfo">
+   <property name="text">
+    <string>QrySettlementInfo</string>
+   </property>
+  </action>
+  <action name="actionQryDepthMarketData">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>QryDepthMarketData</string>
+   </property>
+  </action>
+  <action name="actionQryInstrument">
+   <property name="text">
+    <string>QryInstrument</string>
+   </property>
+  </action>
+  <action name="actionQryExchange">
+   <property name="text">
+    <string>QryExchange</string>
+   </property>
+  </action>
+  <action name="actionQryInstrumentCommissionRate">
+   <property name="text">
+    <string>QryInstrumentCommissionRate</string>
+   </property>
+  </action>
+  <action name="actionQryInstrumentMarginRate">
+   <property name="text">
+    <string>QryInstrumentMarginRate</string>
+   </property>
+  </action>
+  <action name="actionQryTradingCode">
+   <property name="text">
+    <string>QryTradingCode</string>
+   </property>
+  </action>
+  <action name="actionQryInvestor">
+   <property name="text">
+    <string>QryInvestor</string>
+   </property>
+  </action>
+  <action name="actionQryTradingAccount">
+   <property name="text">
+    <string>QryTradingAccount</string>
+   </property>
+  </action>
+  <action name="actionQryTrade">
+   <property name="text">
+    <string>QryTrade</string>
+   </property>
+  </action>
+  <action name="actionQryOrder">
+   <property name="text">
+    <string>QryOrder</string>
+   </property>
+  </action>
+  <action name="actionFutureToBank">
+   <property name="text">
+    <string>FutureToBank</string>
+   </property>
+  </action>
+  <action name="actionUserPasswordUpdate">
+   <property name="text">
+    <string>UserPasswordUpdate</string>
+   </property>
+  </action>
+  <action name="actionTradingAccountPasswordUpdate">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>TradingAccountPasswordUpdate</string>
+   </property>
+  </action>
+  <action name="actionQueryMaxOrderVolume">
+   <property name="text">
+    <string>QueryMaxOrderVolume</string>
+   </property>
+  </action>
+  <action name="actionQryInvestor_2">
+   <property name="text">
+    <string>QryInvestor</string>
+   </property>
+  </action>
+  <action name="actionLeft">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>left</string>
+   </property>
+  </action>
+  <action name="actionRight">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>right</string>
+   </property>
+  </action>
+  <action name="actionBottom">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>bottom</string>
+   </property>
+  </action>
+  <action name="actionDemo">
+   <property name="text">
+    <string>LUA_demo</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TickChart</class>
+   <extends>QWidget</extends>
+   <header>UI/tickchart.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NormalStockList</class>
+   <extends>QTableView</extends>
+   <header>UI/stocklist.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CustomedStockList</class>
+   <extends>QTableView</extends>
+   <header>UI/stocklist.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <slots>
+  <signal>outputSignal(QString)</signal>
+  <slot>actionConnect()</slot>
+  <slot>actionDisconnect()</slot>
+  <slot>output(QString)</slot>
+  <slot>clearLog()</slot>
+  <slot>updatePanel(CThostFtdcDepthMarketDataField*)</slot>
+ </slots>
+</ui>
