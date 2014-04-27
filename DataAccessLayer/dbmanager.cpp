@@ -6,14 +6,13 @@
 
 DbManager::DbManager()
 {
-    //qDebug() << __FUNCTION__;
 }
 
 bool DbManager::clearData()
 {
     QString exeSql = QString("SELECT CONCAT( 'drop table ', table_name, ';' ) FROM information_schema.tables WHERE table_name LIKE 'tick_%';");
 
-    qDebug() << "clearData exeSql=" << exeSql;
+    //qDebug() << "clearData exeSql=" << exeSql;
 
     QSqlQuery query = db.exec(exeSql);
 

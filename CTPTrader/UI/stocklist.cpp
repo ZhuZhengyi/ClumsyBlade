@@ -7,11 +7,13 @@
 
 #include "../ShareLib/share_headers/utils/StringUtil.h"
 
+//int indexA = 0;
+
 StockList::StockList(QWidget *parent) :
     QTableView(parent)
 {
-
     delegate=new MyItemDelegate(this);
+
     model=new MyStandardItemModel;
     model->setRowCount(0);
     model->setColumnCount(14);
@@ -63,30 +65,6 @@ StockList::StockList(QWidget *parent) :
 
 }
 
-NormalStockList::NormalStockList(QWidget *parent): StockList(parent)
-{
-    initCmenu();
-}
-
-void NormalStockList::initCmenu()
-{
-    QAction *addAction = cmenu->addAction(QApplication::translate("NormalStockList", "Add to Customed List", 0, QApplication::UnicodeUTF8));
-
-    connect(addAction, SIGNAL(triggered(bool)), this, SLOT(addSlot()));
-
-}
-
-CustomedStockList::CustomedStockList(QWidget *parent): StockList(parent)
-{
-    initCmenu();
-}
-
-void CustomedStockList::initCmenu()
-{
-    QAction *deleteAction = cmenu->addAction(QApplication::translate("CustomedStockList", "Delete from Customed List", 0, QApplication::UnicodeUTF8));
-    connect(deleteAction, SIGNAL(triggered(bool)), this, SLOT(deleteSlot()));
-
-}
 
 void StockList::addSlot()
 {
@@ -168,8 +146,6 @@ void StockList::updateData(CThostFtdcDepthMarketDataField *data)
 
 }
 
-int indexA = 0;
-
 void StockList::updatePanelSlot(int row)
 {
     CThostFtdcDepthMarketDataField * data = 0;
@@ -188,7 +164,6 @@ void StockList::addModel(QString item)
         QStandardItem *item2 = new QStandardItem(item);
         item2->setData(item, Qt::TextAlignmentRole);
         model->appendRow(item2);
-
     }
 }
 
@@ -389,3 +364,27 @@ CThostFtdcDepthMarketDataField *MyStandardItemModel::getMd(int row)
     return md_map[row];
 }
 
+NormalStockList::NormalStockList(QWidget *parent): StockList(parent)
+{
+    initCmenu();
+}
+
+void NormalStockList::initCmenu()
+{
+    QAction *addAction = cmenu->addAction(QApplication::translate("NormalStockList", "Add to Customed List", 0, QApplication::UnicodeUTF8));
+
+    connect(addAction, SIGNAL(triggered(bool)), this, SLOT(addSlot()));
+
+}
+
+CustomedStockList::CustomedStockList(QWidget *parent): StockList(parent)
+{
+    initCmenu();
+}
+
+void CustomedStockList::initCmenu()
+{
+    QAction *deleteAction = cmenu->addAction(QApplication::translate("CustomedStockList", "Delete from Customed List", 0, QApplication::UnicodeUTF8));
+    connect(deleteAction, SIGNAL(triggered(bool)), this, SLOT(deleteSlot()));
+
+}

@@ -25,6 +25,9 @@ QString localInstrumentID = "unknown";
 
 double PreClosePrice = -1;
 
+/*
+ *
+ */
 TickChart::TickChart(QWidget *parent) :
     QWidget(parent)
 {
@@ -48,11 +51,18 @@ void TickChart::mouseMoveEvent(QMouseEvent * event)
     update();
 }
 
+/*
+ *
+ */
 void TickChart::clearAllData(QString InstrumentID)
 {
     localInstrumentID = InstrumentID;
     QFile file("data/" + InstrumentID + ".dat");
-    file.open(QIODevice::ReadOnly);
+    if(!file.open(QIODevice::ReadOnly))
+    {
+        qDebug() << __FUNCTION__ << "open failed!";
+        return;
+    }
     qint64 size = file.size();
 
     qint32 totalUnitSize = sizeof(double) * 2 + sizeof(int) + 9;
@@ -66,10 +76,12 @@ void TickChart::clearAllData(QString InstrumentID)
     cout << "clearAllData size % totalUnitSize="  << size % totalUnitSize << endl;
     QDataStream ds(&file);
     ds.setVersion(QDataStream::Qt_4_8);
+
     double LastPrice = -1;
     double tempPreClosePrice = -1;
     QString UpdateTime;
     int UpdateMillisec;
+
     if(count == 0)
     {
         return;
@@ -141,6 +153,9 @@ void TickChart::paintEvent(QPaintEvent* event)
 
 }
 
+/*
+ *
+ */
 void TickChart::drawOthers()
 {
     QPainter painter(this);
@@ -181,6 +196,9 @@ void TickChart::getBigAndSmall()
 
 }
 
+/*
+ * 绘制数据线
+ */
 void TickChart::drawData()
 {
     int size = list.size();
@@ -215,6 +233,9 @@ void TickChart::drawData()
     }
 }
 
+/*
+ * 绘制坐标网格
+ */
 void TickChart::drawAxis()
 {
     QPainter painter(this);

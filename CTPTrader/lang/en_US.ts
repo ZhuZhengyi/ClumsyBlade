@@ -134,7 +134,7 @@
 <context>
     <name>CustomedStockList</name>
     <message>
-        <location filename="../UI/stocklist.cpp" line="86"/>
+        <location filename="../UI/stocklist.cpp" line="387"/>
         <source>Delete from Customed List</source>
         <translation type="unfinished"></translation>
     </message>
@@ -176,7 +176,7 @@
 <context>
     <name>NormalStockList</name>
     <message>
-        <location filename="../UI/stocklist.cpp" line="73"/>
+        <location filename="../UI/stocklist.cpp" line="374"/>
         <source>Add to Customed List</source>
         <translation type="unfinished"></translation>
     </message>
@@ -629,72 +629,72 @@
 <context>
     <name>StockList</name>
     <message>
-        <location filename="../UI/stocklist.cpp" line="26"/>
+        <location filename="../UI/stocklist.cpp" line="28"/>
         <source>InstrumentID</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="28"/>
+        <location filename="../UI/stocklist.cpp" line="30"/>
         <source>Volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="29"/>
+        <location filename="../UI/stocklist.cpp" line="31"/>
         <source>Turnover</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="30"/>
+        <location filename="../UI/stocklist.cpp" line="32"/>
         <source>OpenInterest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="31"/>
+        <location filename="../UI/stocklist.cpp" line="33"/>
         <source>PreClosePrice</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="32"/>
+        <location filename="../UI/stocklist.cpp" line="34"/>
         <source>PreOpenInterest</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="33"/>
+        <location filename="../UI/stocklist.cpp" line="35"/>
         <source>OpenPrice</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="34"/>
+        <location filename="../UI/stocklist.cpp" line="36"/>
         <source>HighestPrice</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="35"/>
+        <location filename="../UI/stocklist.cpp" line="37"/>
         <source>LowestPrice</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="36"/>
+        <location filename="../UI/stocklist.cpp" line="38"/>
         <source>ClosePrice</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="37"/>
+        <location filename="../UI/stocklist.cpp" line="39"/>
         <source>UpperLimitPrice</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="38"/>
+        <location filename="../UI/stocklist.cpp" line="40"/>
         <source>LowerLimitPrice</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="39"/>
+        <location filename="../UI/stocklist.cpp" line="41"/>
         <source>AveragePrice</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../UI/stocklist.cpp" line="27"/>
+        <location filename="../UI/stocklist.cpp" line="29"/>
         <source>LastPrice</source>
         <oldsource>BidPrice</oldsource>
         <translation type="unfinished"></translation>
